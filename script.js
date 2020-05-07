@@ -1,12 +1,15 @@
-var myImg = new Image();
-myImg.src = 'redblue.png';
-var context = document.getElementById('canvas').getContext('2d');
-context.drawImage(myImg, 0, 0);
-var data = context.getImageData(x, y, 1, 1).data;
+
 
 
 function average() {
 
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("redblue");
+    ctx.drawImage(img, 0, 0);
+    var imgData = ctx.getImageData(0, 0, c.width, c.height);
+    console.log(imgData);
+    ctx.putImageData(imgData, 0, 0);
 
     var Color1 = "#e74c3c";
     var Color2 = "#f1c40f";
@@ -17,7 +20,7 @@ function average() {
         var sub2 = Color2.substring(1 + 2 * i, 3 + 2 * i);
 
         console.log(sub1);
-
+        console.log(sub2);
         var v1 = parseInt(sub1, 16);
         var v2 = parseInt(sub2, 16);
 
@@ -30,7 +33,6 @@ function average() {
 
         AverageColor += sub;
     }
-
     document.getElementById("block1").style.backgroundColor = Color1;
     document.getElementById("block1").innerHTML = Color1;
     document.getElementById("block2").style.backgroundColor = Color2;

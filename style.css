@@ -36,25 +36,6 @@ body {
     height: 100px;
     border: 2px solid black;
 }
-#block3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
-
-#block4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
 #output {
     display: flex;
     justify-content: center;
@@ -68,4 +49,10 @@ body {
 button {
     margin: 10px;
     height: 40px;
+}
+#canvas {
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    width: auto;
+    height: auto;
 }
