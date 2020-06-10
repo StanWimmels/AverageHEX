@@ -1,15 +1,5 @@
 
-
-
 function average() {
-
-    var c = document.getElementById("canvas");
-    var ctx = c.getContext("2d");
-    var img = document.getElementById("redblue");
-    ctx.drawImage(img, 0, 0);
-    var imgData = ctx.getImageData(0, 0, c.width, c.height);
-    console.log(imgData);
-    ctx.putImageData(imgData, 0, 0);
 
     var Color1 = "#e74c3c";
     var Color2 = "#f1c40f";
